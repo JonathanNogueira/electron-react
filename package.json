@@ -1,7 +1,7 @@
 {
   "name": "electron-react-starter",
   "version": "0.1.0",
-  "description": "example",
+  "description": "electron package",
   "author": {
     "name": "Jonathan Nogueira"
   },

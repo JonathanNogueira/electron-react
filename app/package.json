@@ -3,11 +3,12 @@
   "author": {
     "name": "Jonathan Nogueira"
   },
-  "description": "",
+  "description": "a react app",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
   "main": "build/main.js",
+  "homepage": "./",
   "devDependencies": {
     "babel-eslint": "7.0.0",
     "babel-plugin-react-intl": "^2.2.0",

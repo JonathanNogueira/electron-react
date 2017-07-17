@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Grid, Row, Col, PageHeader } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 import Counter from '../components/Counter';
 import { increment, decrement } from '../actions/counterActions';
 

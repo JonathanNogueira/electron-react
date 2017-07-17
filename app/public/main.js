@@ -22,8 +22,8 @@ app.on('ready', function() {
 
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 800, 
-    height: 600, 
+    width: 400, 
+    height: 200, 
     backgroundColor: '#2e2c29'
   });
 
@@ -35,7 +35,7 @@ app.on('ready', function() {
   }));
 
   // Open the DevTools. 
-  mainWindow.webContents.openDevTools();
+		//mainWindow.webContents.openDevTools();
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {
