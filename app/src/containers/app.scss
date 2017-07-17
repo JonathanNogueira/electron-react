@@ -1,0 +1,102 @@
+$primaryColor: #007EA7; 
+$secondaryColor: #323031;
+$backgroundColor: #E8E9EB; 
+$activeColor: #E8E9EB;
+$atlColor: #EF476F;  
+
+.App {
+  // position:fixed !important;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  overflow: hidden;
+  background: $backgroundColor; 
+  color: $secondaryColor; 
+}
+
+html {
+  background: $atlColor; 
+}
+
+.App-header {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    z-index: 999;
+    position: relative;
+    background-color: $primaryColor;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+
+    &.scrolled {
+      box-shadow: 0 2px 2px 1px rgba(50, 48, 49, 0.47);
+      // height: 75px;
+      // nav a {
+      //   line-height: 75px;
+      // }
+    } 
+
+     &.scrolled2 {
+      background-color: orange;
+      // height: 75px;
+      // nav a {
+      //   line-height: 75px;
+      // }
+    } 
+
+    nav {
+      float: left; 
+      a {
+          line-height: 150px;
+          margin-left: 20px;
+          color: $backgroundColor;
+          font-weight: 700;
+          font-size: 18px;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;
+          text-decoration: none;
+
+          &:focus {
+              border-bottom: 2px solid $atlColor;
+          }
+          &:active {
+              border-bottom: 2px solid $atlColor;
+          }
+          &.active {
+              border-bottom: 2px solid $atlColor;
+          }
+      }
+    }
+}
+
+.app-nav-bar {
+  box-shadow: 10px darkgrey;
+}
+
+.app-content {
+  height: calc(100% - 150px);
+  overflow-y: scroll; 
+}
+
+.content-inner {
+  padding: 20px;
+}
+
+.App-intro {
+  font-size: large;
+  margin: 0 auto;
+  max-width: 30em;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

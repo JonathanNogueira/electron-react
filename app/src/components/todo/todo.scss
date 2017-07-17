@@ -1,0 +1,23 @@
+.title {
+    text-align: center;
+}
+
+.editable {
+    outline: none; 
+}
+
+.todo-item {
+    transition: box-shadow 250ms ease-in-out; 
+    box-shadow: 2.5px 2.5px 1.5px #888888;
+
+    &:hover {
+         box-shadow: 5px 5px 2.5px #888888;
+    }
+
+    &:focus {
+        width: 80%;
+        height: 80%;
+        position: fixed;
+        z-index: 1;
+    }
+}

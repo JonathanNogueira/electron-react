@@ -1,0 +1,53 @@
+{
+  "name": "electron-react-starter",
+  "version": "0.1.0",
+  "description": "example",
+  "author": {
+    "name": "Jonathan Nogueira"
+  },
+  "private": true,
+  "license": "MIT",
+  "bin": {
+    "electron": "./node_modules/.bin/electron"
+  },
+  "devDependencies": {
+    "electron-packager": "^8.5.2",
+    "electron-rebuild": "1.5.7",
+     "electron-builder": "^15.1.1",
+    "electron": "^1.6.3"
+  },
+  "build": {
+    "appId": "com.example.starter",
+    "directories": {
+      "buildResources": "build",
+      "output": "dist", 
+      "app": "app"
+    },
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
+  },
+  "scripts": {
+    "start": "electron ./app/build/main.js",
+    "package": "build --dir",
+    "build": "build",
+    "postinstall": "install-app-deps"
+  }
+}
