@@ -13,7 +13,7 @@
   "devDependencies": {
     "electron-packager": "^8.5.2",
     "electron-rebuild": "1.5.7",
-     "electron-builder": "^15.1.1",
+    "electron-builder": "^15.1.1",
     "electron": "^1.6.3"
   },
   "build": {
@@ -24,6 +24,7 @@
       "app": "app"
     },
     "dmg": {
+      "icon": "app/build/icons/favicon.icns",
       "contents": [
         {
           "x": 110,
@@ -39,15 +40,20 @@
     },
     "linux": {
       "target": [
-        "AppImage",
-        "deb"
+        "AppImage"
       ]
-    }
+    }, 
+	"win": {				        
+	}
   },
   "scripts": {
     "start": "electron ./app/build/main.js",
-    "package": "build --dir",
-    "build": "build",
-    "postinstall": "install-app-deps"
-  }
+	"package-linux": "dist-linux --dir",
+	"dist-linux":"build -l --x64 --ia32",
+	"dist-windows":"build -w --x64 --ia32",
+	"package-windows": "dist-windows --dir", 
+	"dist-macos":"build -m --x64 --ia32",
+	"package-macos": "dist-macos --dir",
+    "postinstall": "install-app-deps"  
+  }	
 }

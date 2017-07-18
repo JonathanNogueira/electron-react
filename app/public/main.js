@@ -24,7 +24,8 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow({
     width: 400, 
     height: 200, 
-    backgroundColor: '#2e2c29'
+    backgroundColor: '#2e2c29', 
+    icon: __dirname + '/icons/favicon.png'
   });
 
  // and load the index.html of the app.

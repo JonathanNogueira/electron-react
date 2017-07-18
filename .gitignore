@@ -8,10 +8,14 @@ coverage
 
 # production
 build
+dist
 
 # misc
 .DS_Store
 .env
 npm-debug.log
 .vscode
-dist
+yarn-error.log
+
+#vim
+*.swp

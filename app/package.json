@@ -1,7 +1,8 @@
 {
   "name": "electron-react-starter",
   "author": {
-    "name": "Jonathan Nogueira"
+    "name": "Jonathan Nogueira", 
+	"email": "foo@bar.tech"
   },
   "description": "a react app",
   "version": "0.1.0",
