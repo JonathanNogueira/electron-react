@@ -14,8 +14,8 @@ app.on('ready', function() {
 
     // Create the browser window.
     mainWindow = new BrowserWindow({
-        width: 400,
-        height: 200,
+        width: 600,
+        height: 800,
         backgroundColor: '#2e2c29',
         icon: __dirname + '/icons/favicon.png'
     });
